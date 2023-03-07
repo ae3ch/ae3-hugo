@@ -3,9 +3,10 @@ title: "Telegram Notification on successful SSH Login"
 date: 2022-12-12 17:46:28+01:00
 # aliases: ["/first"]
 tags:
-    - docker
-    - traefik
-    - mastodon
+    - security
+    - python
+    - telegram
+    - linux
 author: "ae3"
 draft: false
 hidemeta: false

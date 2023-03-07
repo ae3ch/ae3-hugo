@@ -1,5 +1,5 @@
 ---
-title: "Title"
+title: ""
 date: {{ .Date }}
 # aliases: ["/first"]
 tags:

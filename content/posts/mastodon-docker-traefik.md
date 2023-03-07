@@ -1,6 +1,6 @@
 ---
 title: "Mastodon with Docker and Traefik"
-date: 2023-03-04T10:30:03+00:00
+date: 2022-11-16 17:35:03+00:00
 # weight: 1
 # aliases: ["/first"]
 tags:

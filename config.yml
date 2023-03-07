@@ -1,4 +1,4 @@
-baseURL: "https://ae3.pages.dev"
+baseURL: "https://ae3.ch"
 title: ae3.ch
 paginate: 5
 theme: ["hugo-notice", "PaperMod"]

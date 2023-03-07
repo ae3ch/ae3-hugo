@@ -46,9 +46,9 @@ sudo apt-get install \
 ```
 ### 2. Add Docker GPG key
 This GPG key verifies the Docker packages that are loaded via apt. This ensures that only the real Docker packages are installed.
-``bash
+```bash
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-````
+```
 
 ### 3. Set up Docker repository.
 Now we'll set up the Docker stable repository. If you prefer to install Docker from the testing or nightly repo, you can simply replace `stable` with `testing`, or `nightly` respectively. For production use, however, I strongly recommend using the stable version.

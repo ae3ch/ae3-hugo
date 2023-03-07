@@ -5,7 +5,6 @@ date: 2021-07-12 15:36:44+01:00
 tags:
     - docker
     - traefik
-    - mastodon
 author: "ae3"
 draft: false
 hidemeta: false
@@ -33,7 +32,6 @@ I've been a fan of Standard Notes for a long time. Unfortunately, the annual sub
 
 Unfortunately, I haven't found any instructions on how to set up Standard Notes together with Docker and Traefik as a reverse proxy. Therefore I decided to explain my setup to you.
 
-===
 ## Selfhosted Standard Notes with Docker and Traefik
 ### Preparation
 

@@ -1,0 +1,25 @@
+.main {
+    max-width: calc(var(--nav-width) + var(--gap) * 2); !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--headers);
+}
+.hljs-keyword, .hljs-selector-tag {
+    color: #e772d2 !important;
+}
+.post-tags a::before {
+    font-weight: bold;
+    content: "# ";
+}
+.post-tags a {
+    font-weight: bold;
+    content: "# ";
+    border: none;
+    background: none;
+    border-radius: none;
+}

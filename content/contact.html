@@ -1,0 +1,66 @@
+---
+draft: false
+hidemeta: true
+comments: false
+hideSummary: true
+ShowReadingTime: false
+ShowBreadCrumbs: false
+ShowPostNavLinks: false
+ShowWordCount: false
+ShowRssButtonInSectionTermList: false
+UseHugoToc: false
+title: "Contact"
+showtoc: false
+---
+
+<style>
+input[type=text], select, textarea {
+  width: 100%;
+  color: #d7d7d7;
+  padding: 12px;
+  border: 1px solid #ccc;
+  background-color: #202020;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f89222;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+input[type=submit]:hover {
+  background-color: #545454;
+}
+
+.container-contactform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+<h3>Contact Form</h3>
+
+<div class="container-contactform">
+  <form
+    action="https://formspree.io/f/xnqyvyeb"
+    method="POST"
+  >
+    <label style="color: rgb(29, 29, 29)" for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email address">
+
+    <label style="color: rgb(29, 29, 29)" for="subject">Message</label>
+    <textarea id="subject" name="message" placeholder="Write something..." style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</div>

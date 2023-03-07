@@ -1,0 +1,134 @@
+baseURL: "https://ae3.pages.dev"
+title: ae3.ch
+paginate: 5
+theme: ["hugo-notice", "PaperMod"]
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+permalinks:
+  posts: '/:filename/'
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: ae3.ch
+  description: "Everything about docker, selfhosted and security from a System Engineer's perspective"
+  keywords: [docker, selfhosted, traefik, security, linux]
+  author: ae3
+  images: ["ae3-og.png"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: dark # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: true
+
+  assets:
+    #disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+
+  label:
+    text: "ae3"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: ExampleSite
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: |+
+      Welcome to my blog. You'll find a lot of posts about selfhosting with Docker and various reverse proxies from the container universe.
+      Besides, there are also articles about fixes from the everyday life of a computer scientist.
+
+  socialIcons:
+    - name: mastodon
+      url: "https://infosec.exchange/@ae3"
+    - name: github
+      url: "https://github.com/ae3ch"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - name: search
+      url: /search/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: archive
+      name: archive
+      url: /archive/
+      weight: 30
+    - identifier: contact
+      name: contact
+      url: /contact/
+      weight: 40
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai

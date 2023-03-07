@@ -12,7 +12,7 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON # is necessary
+    - JSON
 
 minify:
   disableXML: true
@@ -22,7 +22,7 @@ permalinks:
   posts: '/:filename/'
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production
   title: ae3.ch
   description: "Everything about docker, selfhosted and security from a System Engineer's perspective"
   keywords: [docker, selfhosted, traefik, security, linux]

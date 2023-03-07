@@ -1,6 +1,6 @@
 ---
 title: "Systemd timer as a cron replacement"
-date: 2023-03-07T20:48:48+01:00
+date: 2022-12-29 23:35:48+01:00
 # aliases: ["/first"]
 tags:
     - debian

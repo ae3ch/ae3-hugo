@@ -84,6 +84,8 @@ params:
       url: "https://infosec.exchange/@ae3"
     - name: github
       url: "https://github.com/ae3ch"
+    - name: RSS
+      url: "index.xml"
 
   cover:
     hidden: true # hide everywhere but not in structured data
